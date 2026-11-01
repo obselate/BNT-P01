@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/wasm4.css">
+  <link rel="stylesheet" href="player.css">
+  <title>BNT-P01</title>
+  <meta property="og:title" content="BNT-P01">
+  <meta property="og:image" content="https://obselate.github.io/BNT-P01/cartridge.png">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="vendor/wasm4.js" defer></script>
+  <script src="player.js" type="module"></script>
+</head>
+<body>
+  <main id="lock">
+    <form autocomplete="off">
+      <div class="symbol" aria-hidden="true">▣</div>
+      <label for="transaction">TRANSACTION</label>
+      <input id="transaction" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Transaction">
+      <label for="key">KEY</label>
+      <input id="key" type="password" spellcheck="false" autocomplete="off" aria-label="Key">
+      <button type="submit">PLAY</button>
+      <output id="status" role="status"></output>
+    </form>
+  </main>
+</body>
+</html>
